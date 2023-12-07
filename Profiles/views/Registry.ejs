@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registry</title>
+</head>
+<body>
+    <h1>Registration Page</h1>
+    <form action="/profiles/add" method="post">
+        <div>
+            <label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" required><br>
+        </div>
+        <div>
+            <label for="hometown">Hometown:</label><br>
+			<input type="text" id="hometown" name="hometown" required><br>
+        </div>
+        <div>
+            <label for="birthdate">Date of Birth (DD/MM/YYYY):</label><br>
+			<input type="text" id="birthdate" name="birthdate" required><br>
+        </div>
+        <div>
+            <label for="favmovie">Favorite Movie:</label><br>
+			<input type="text" id="favmovie1" name="favmovie" required><br>
+        </div>
+        <div>
+            <label for="hobby">Favorite Activities:</label><br>
+			<input type="text" id="hobby" name="hobby" required><br>
+        </div>
+        <button type="submit">Submit Profile</button>
+    </form>
+</body>
+</html>

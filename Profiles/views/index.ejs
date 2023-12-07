@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile List</title>
+</head>
+<body>
+    <h1>Profile List</h1>
+    <% if(profiles.length > 0){ %>
+        <ul style="list-style-type:none;">
+            <% profiles.forEach(function(profile) { %>
+                <li><%= profile.name %> <br> <%= profile.hometown %> <br> <%= profile.birthdate %> <br> <%= profile.favmovie %> <br> <%= profile.hobby %></li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No profiles added yet.</p>
+    <% } %>
+    <a href="/profiles/add">Sign Up</a>
+</body>
+</html>
